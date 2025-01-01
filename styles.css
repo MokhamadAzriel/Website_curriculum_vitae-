@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: "Arial", Sans-Serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* container */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background-color: #330066;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Content */
+.Content {
+    padding: 20px;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    border-radius: 50%;
+    max-width: 150px;
+    border: 4px solid #330066;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-info ul li {
+    margin-bottom: 10px;
+}
+
+/* Section */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    color: #330066;
+    border-bottom: 2px solid #330066;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.section ul li::before {
+    content: "•";
+    color: #330066;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #330066;
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile img {
+        margin-bottom: 15px;
+    }
+}
